@@ -9,6 +9,11 @@ def test_sqliv(patient_id):
     print(sql)
 
 
+def test_sqliv2(patient_id):
+    bad_sql = "select * from patients where id = '{}'".format(patient_id)
+    print(bad_sql)
+
+
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
@@ -18,5 +23,6 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
     test_sqliv(1)
+    test_sqliv2(1)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
